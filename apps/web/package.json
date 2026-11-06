@@ -1,0 +1,38 @@
+{
+  "name": "@clipppy/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0 --port 43123",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0 --port 43123",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@clipppy/contracts": "workspace:*",
+    "@clipppy/db": "workspace:*",
+    "@clipppy/domain": "workspace:*",
+    "@clipppy/ingest": "workspace:*",
+    "@clipppy/jobs": "workspace:*",
+    "@clipppy/publish": "workspace:*",
+    "@radix-ui/react-slot": "^1.2.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.503.0",
+    "next": "^15.3.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwind-merge": "^3.2.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3"
+  }
+}

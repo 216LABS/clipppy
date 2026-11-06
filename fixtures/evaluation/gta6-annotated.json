@@ -1,0 +1,8 @@
+{
+  "stream_label": "synthetic-gta-rehearsal",
+  "fully_annotated": false,
+  "note": "Recall stays null until a full consented stream is annotated. These intervals are fixture labels, not measured launch performance.",
+  "intervals": [
+    { "start_ms": 300000, "end_ms": 345000, "label": "distributed chat burst" }
+  ]
+}

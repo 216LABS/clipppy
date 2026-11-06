@@ -1,0 +1,14 @@
+{
+  "name": "@clipppy/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "scripts": { "typecheck": "tsc --noEmit", "lint": "tsc --noEmit" },
+  "dependencies": { "drizzle-orm": "^0.43.1" },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.7",
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
+  }
+}

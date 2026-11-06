@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(223, 242, 90, 0.16), transparent 50%),
+    linear-gradient(180deg, #101612 0%, #0c100e 100%);
+  color: #f3ecdc;
+}
+
+.paper-theme {
+  background:
+    radial-gradient(900px 400px at 100% 0%, rgba(223, 242, 90, 0.35), transparent 40%),
+    #f3ecdc;
+  color: #14211b;
+}
+
+.grid-fade {
+  background-image: linear-gradient(rgba(20, 33, 27, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 33, 27, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+::selection {
+  background: #dff25a;
+  color: #14211b;
+}

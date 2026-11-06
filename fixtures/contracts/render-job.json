@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "candidate_id": "66666666-6666-4666-8666-666666666661",
+  "tenant_id": "11111111-1111-4111-8111-111111111111",
+  "segments": [
+    {
+      "sequence": 1,
+      "object_key": "tenants/11111111-1111-4111-8111-111111111111/segments/1.ts",
+      "start_ms": 0,
+      "duration_ms": 10000,
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ],
+  "window": { "start_ms": 0, "end_ms": 10000 },
+  "profile_snapshot": {
+    "schema_version": 1,
+    "language": "en",
+    "detection": {
+      "bucket_seconds": 5,
+      "baseline_window_seconds": 300,
+      "baseline_min_events": 20,
+      "score_threshold": 0.72,
+      "min_messages_per_second": 2,
+      "min_unique_chatters": 8,
+      "weights": {
+        "chat_zscore": 0.4,
+        "emote_density": 0.2,
+        "unique_chatter_zscore": 0.15,
+        "audio_rms_zscore": 0.15,
+        "keyword_burst": 0.1
+      },
+      "emote_terms": ["KEKW", "LUL"],
+      "keywords": ["clip it", "no way", "what just happened"],
+      "audio_enabled": false,
+      "keyword_enabled": false,
+      "redistribute_missing_features": false,
+      "cooldown_seconds": 90,
+      "max_candidates_per_hour": 12,
+      "quiet_chat_mode": false
+    },
+    "window": {
+      "pre_seconds": 15,
+      "post_seconds": 30,
+      "min_duration_seconds": 15,
+      "max_duration_seconds": 60
+    },
+    "style": {
+      "template_id": "gameplay_webcam_v1",
+      "caption_preset": "karaoke_clean",
+      "caption_language": "en",
+      "hook_enabled": true,
+      "end_card_enabled": true,
+      "silence_cut_enabled": false,
+      "face_crop_enabled": false,
+      "brand_asset_keys": [],
+      "profanity_policy": "censor_captions_only"
+    }
+  },
+  "style_snapshot": {
+    "template_id": "gameplay_webcam_v1",
+    "caption_preset": "karaoke_clean",
+    "hook_enabled": true,
+    "end_card_enabled": false,
+    "engine_version": "clipppy-render-0.1.0"
+  },
+  "output_key": "tenants/11111111-1111-4111-8111-111111111111/renders/66666666-6666-4666-8666-666666666661.mp4",
+  "transcript": null
+}

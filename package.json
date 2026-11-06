@@ -1,0 +1,29 @@
+{
+  "name": "clipppy",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Clipppy by 216LABS — authorized clipping copilot with human approval before every post.",
+  "packageManager": "pnpm@10.33.4",
+  "scripts": {
+    "dev": "pnpm --filter @clipppy/web dev",
+    "build": "pnpm --filter @clipppy/web build",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "vitest run",
+    "test:py": "uv run --project workers/media --group dev pytest -q",
+    "lint": "eslint packages apps/web --max-warnings 0",
+    "verify": "pnpm typecheck && pnpm lint && pnpm test && pnpm test:py && node scripts/secret-scan.mjs && pnpm build",
+    "fixture:media": "ffmpeg -y -f lavfi -i color=c=0x14221a:s=1080x1920:d=2 -f lavfi -i sine=frequency=440:sample_rate=48000:duration=2 -shortest -c:v libx264 -pix_fmt yuv420p -preset ultrafast -r 30 -c:a aac -movflags +faststart fixtures/media/synthetic-vertical.mp4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.26.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1",
+    "vitest": "^3.1.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

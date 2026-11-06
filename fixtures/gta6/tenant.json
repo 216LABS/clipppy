@@ -1,0 +1,16 @@
+{
+  "slug": "gta6-flip-test",
+  "display_name": "GTA 6 launch test",
+  "is_internal": true,
+  "owner_email": "flip@216labs.test",
+  "game_id": "gta6",
+  "game_name": "Grand Theft Auto VI",
+  "source": {
+    "platform": "twitch",
+    "platform_channel_id": "flip-gta6-test",
+    "channel_login": "flip_gta6_test",
+    "permission_basis": "owned",
+    "permission_reference": "Flip owns this test channel. Synthetic fixture, not a scraped login."
+  },
+  "notes": "Launch rehearsal tenant only. Discovery hits are not authorized sources. No live provider tokens are stored in the repo."
+}
